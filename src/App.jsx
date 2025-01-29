@@ -6,10 +6,11 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-       try {const response = await fetch('https://jsonplaceholder.typicode.com/users');
-      const data = await response.json();
-      setUser(data)
-    } 
+       try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        const data = await response.json();
+        setUser(data)
+      } 
       catch (error) {
         console.error(error);
       }
